@@ -18,7 +18,7 @@ namespace Shell{
     class ShellApp: public Core::BaseApp
     {
         public:
-            ShellApp(Core::Models::IState* _initState): BaseApp(_initState) { }
+            //ShellApp(Core::Models::IState* _initState): BaseApp(_initState) { }
             ~ShellApp() {}
             std::string GetAppName() { return "Shell"; }
             std::string GetAppVersion() { return ESSEX_ENGINE_VERSION; }
