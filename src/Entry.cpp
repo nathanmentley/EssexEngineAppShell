@@ -11,7 +11,7 @@
 
 #include <EssexEngineAppShell/MainState.h>
 #include <EssexEngineAppShell/ShellApp.h>
-
+/*
 extern "C" {
     void app_init(EssexEngine::Context* context) {
         context->RegisterApp(
@@ -21,3 +21,4 @@ extern "C" {
         );
     }
 }
+*/
