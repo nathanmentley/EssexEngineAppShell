@@ -18,7 +18,7 @@ namespace Shell{
     class MainState: public Core::Models::State
     {
     public:
-        MainState(WeakPointer<Context> _context);
+        MainState(WeakPointer<Context> _context, WeakPointer<Core::IApp> _app);
         ~MainState();
         
         //override

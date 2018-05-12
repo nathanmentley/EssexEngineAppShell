@@ -11,20 +11,17 @@
 
 #include <EssexEngineAppShell/MainState.h>
 
+using EssexEngine::Core::IApp;
 using EssexEngine::Core::Models::State;
 
 using EssexEngine::Apps::Shell::MainState;
 
-MainState::MainState(WeakPointer<Context> _context): State(_context) {}
-
+MainState::MainState(WeakPointer<Context> _context, WeakPointer<IApp> _app): State(_context, _app) {}
 MainState::~MainState() {}
 
 void MainState::Setup() {}
-
 void MainState::Logic() {}
-
 void MainState::Render() {}
-
 bool MainState::PauseUnder() {
     return true;
 }
