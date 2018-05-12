@@ -1,7 +1,7 @@
 /* 
  * Essex Engine
  * 
- * Copyright (C) 2017 Nathan Mentley - All Rights Reserved
+ * Copyright (C) 2018 Nathan Mentley - All Rights Reserved
  * You may use, distribute and modify this code under the
  * terms of the BSD license.
  *
@@ -11,22 +11,20 @@
 
 #include <EssexEngineAppShell/MainState.h>
 
-EssexEngine::Apps::Shell::MainState::MainState(WeakPointer<Context> _context)
-:Core::Models::State(_context) {
-}
+using EssexEngine::Core::Models::State;
 
-EssexEngine::Apps::Shell::MainState::~MainState() {
-}
+using EssexEngine::Apps::Shell::MainState;
 
-void EssexEngine::Apps::Shell::MainState::Setup() {
-}
+MainState::MainState(WeakPointer<Context> _context): State(_context) {}
 
-void EssexEngine::Apps::Shell::MainState::Logic() {
-}
+MainState::~MainState() {}
 
-void EssexEngine::Apps::Shell::MainState::Render() {
-}
+void MainState::Setup() {}
 
-bool EssexEngine::Apps::Shell::MainState::PauseUnder() {
+void MainState::Logic() {}
+
+void MainState::Render() {}
+
+bool MainState::PauseUnder() {
     return true;
 }
